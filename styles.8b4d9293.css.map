@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KACE,sBAAuB,CACvB,iBACF,CAEA,UACE,YAAa,CACb,sBACF","file":"styles.8b4d9293.css","sourceRoot":"..","sourcesContent":["body {\n  font-family: sans-serif;\n  text-align: center;\n}\n\ndeep-chat {\n  display: flex;\n  justify-content: center;\n}\n"]}

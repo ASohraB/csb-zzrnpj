@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="stylesheet" href="/csb-zzrnpj/styles.8b4d9293.css"></head><script type="module" src="https://unpkg.com/deep-chat@1.0.0/dist/deepChat.bundle.js"></script><body> <h1>Deep Chat</h1>  <deep-chat id="custom-id" directConnection="{&quot;demo&quot;: true}"> </deep-chat></body><script type="module">
+    const elementRef = document.getElementById("custom-id");
+    // Setting value via a property (easiest way)
+    elementRef.initialMessages = [
+      { role: "user", text: "Hey, how are you today?" },
+      { role: "ai", text: "I am doing very well!" }
+    ];
+    // Attributes can be set as strings either directly on the element (directConnection) or via a `setAttribute` method on its reference (containerStyle).
+    // When passing JSON objects make sure that they are first correctly stringified (use the following tool https://jsonlint.com/), functions assigned
+    // to properties must not have external references and all regex values are properly escaped (See bottom).
+    elementRef.setAttribute(
+      "containerStyle",
+      JSON.stringify({
+        border: "1px solid black"
+      })
+    );
+  </script></html>
